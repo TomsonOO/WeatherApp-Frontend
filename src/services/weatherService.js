@@ -1,5 +1,5 @@
 const fetchWeatherData = (latitude, longitude) => {
-    return fetch(`${process.env.REACT_APP_API_URL}?latitude=${latitude}&longitude=${longitude}`)
+    return fetch(`https://weather-forecast-backend-6354a2f4cd17.herokuapp.com/solar_energy?latitude=${latitude}&longitude=${longitude}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
